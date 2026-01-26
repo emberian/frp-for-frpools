@@ -1,0 +1,15 @@
+{
+  "name": "frp-for-frpools",
+  "version": "1.0.0",
+  "description": "Signals from Scratch - A literate program about functional reactive programming",
+  "type": "module",
+  "main": "src/signals.ts",
+  "scripts": {
+    "build:book": "mdbook build",
+    "serve": "mdbook serve --open",
+    "test": "npx tsx src/test.ts",
+    "check": "npx tsc --noEmit"
+  },
+  "keywords": ["signals", "frp", "reactive", "literate-programming"],
+  "license": "MIT"
+}

@@ -1,0 +1,76 @@
+/* Signals from Scratch - Custom Styles */
+
+:root {
+  --sidebar-width: 280px;
+}
+
+/* Better code blocks */
+pre {
+  border-radius: 6px;
+  padding: 1em;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  padding: 0.5em 1em;
+  border: 1px solid var(--table-border-color);
+  text-align: left;
+}
+
+th {
+  background: var(--table-header-bg);
+}
+
+/* Blockquotes as callouts */
+blockquote {
+  border-left: 4px solid var(--quote-border);
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  background: var(--quote-bg);
+  border-radius: 0 6px 6px 0;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+/* ASCII diagrams */
+pre:has(code:not([class*="language-"])) {
+  background: var(--code-bg);
+  font-family: monospace;
+}
+
+/* Emphasis on key terms */
+strong {
+  color: var(--fg);
+}
+
+/* Chapter navigation improvements */
+.nav-chapters {
+  font-size: 0.9em;
+}
+
+/* Better inline code */
+code {
+  padding: 0.15em 0.3em;
+  border-radius: 3px;
+}
+
+/* Print styles */
+@media print {
+  .nav-chapters,
+  .sidebar,
+  .menu-title {
+    display: none;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+}
